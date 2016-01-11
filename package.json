@@ -1,22 +1,22 @@
 {
   "name": "methods-run",
   "version": "1.0.0",
-  "description": "Es una pequeña recopilación de formas para hacer arrancar [Webpck](webpack.github.io).",
+  "description": "Es una pequeña recopilación de formas para hacer arrancar [Webpack](webpack.github.io).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "better-npm-run build"
+    "build": "node_modules/.bin/webpack --config webpack.build",
+    "dev-server":"better-npm-run dev-server"
   },
   "betterScripts": {
-    "build": {
-      "command": "node_modules/.bin/webpack --config webpack.build",
+    "dev-server": {
+      "command": "node dev",
       "env": {
-        "NODE_PATH": "./src",
-        "NODE_ENV": "production",
-        "PORT": 8080,
+        "PORT": 3000,
         "HOST": "localhost"
       }
     }
+
   },
   "repository": {
     "type": "git",
