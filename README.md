@@ -40,6 +40,9 @@ npm run hot-server
 ### Tercera ejecución de servidor: Usando browser-sync
 
 Utilizamos [browser-sync](https://www.browsersync.io/), debo buscar si hay modelo para hmr.
+```bash
+npm run browser-sync
+```
 
 Este proyecto sigue las siguientes normas:
 
