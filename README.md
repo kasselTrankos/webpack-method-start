@@ -15,11 +15,11 @@ La configuración es básica.
 npm run build
 ```
 
-En los siguientes ejemplos de ejecución de entorno de desarrollo, cumnple que los archivos no son generados(escritos en disco) sino que son ejecutados desde memoris. Lo que convierte en más rápido aún el trabajo de desarrollo.
+En los siguientes ejemplos de ejecución de entorno de desarrollo, cumple que los archivos no son generados(escritos en disco) sino que son ejecutados desde memoria. Lo que convierte en más rápido aún el trabajo de desarrollo.
 
 Por cada ejecución de webpack, lleva un webpack.run, lo que hace es generar un build asociado a la configuración del webpack.config.js.
 
-### Primera ejecución de Servidor: Mediante la más oficial de Webpack
+### Primera ejecución de Servidor: webpack-dev-server método oficial de Webpack
 Ejecutar el servidor dev [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) desde un script que configura la ejecucion de webpack-dev-server, esta considero la mejor opción. Que permite paremetrizar de una forma mas sencilla.
 
 Se compila mediante la configuación de webpack.build, y el servidor se configura con webpack.dev.
