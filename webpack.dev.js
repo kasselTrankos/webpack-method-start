@@ -10,8 +10,8 @@ module.exports = {
     './src/entry'
   ],
   output: {
-    path: path.resolve(__dirname,'public', 'assets'),
-    publicPath: '/',
+    path: path.resolve(__dirname,'public'),
+    publicPath: '/assets/',
     filename: 'main.js'
   },
   module: {

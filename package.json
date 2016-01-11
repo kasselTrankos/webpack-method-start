@@ -6,17 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/webpack --config webpack.build",
-    "dev-server":"better-npm-run dev-server"
+    "dev-server": "better-npm-run dev-server",
+    "hot-server": "better-npm-run hot-server"
   },
   "betterScripts": {
     "dev-server": {
-      "command": "node dev",
+      "command": "node_modules/.bin/webpack --config webpack.build && node dev",
+      "env": {
+        "PORT": 3000,
+        "HOST": "localhost"
+      }
+    },
+    "hot-server": {
+      "command": "node_modules/.bin/webpack --config webpack.hot && node hot",
       "env": {
         "PORT": 3000,
         "HOST": "localhost"
       }
     }
-
   },
   "repository": {
     "type": "git",
@@ -29,6 +36,7 @@
   },
   "homepage": "https://github.com/kasselTrankos/webpack-method-start#readme",
   "dependencies": {
+    "express": "^4.13.3",
     "webpack": "^1.12.10",
     "webpack-dev-server": "^1.14.0"
   },
@@ -37,6 +45,7 @@
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
-    "better-npm-run": "0.0.5"
+    "better-npm-run": "0.0.5",
+    "webpack-hot-middleware": "^2.6.0"
   }
 }

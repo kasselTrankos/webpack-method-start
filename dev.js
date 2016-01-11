@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.build');
+var config = require('./webpack.dev');
 
 var port = process.env.PORT || 3000;
 var host = process.env.HOST || 'localhost';
