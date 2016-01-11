@@ -1,4 +1,4 @@
-let bodyText = 'Test for ES6, no olvide fdpfrfdd';
+let bodyText = 'Test for ES6, no olvide fdpfrdfdd';
 const app = document.getElementById('app');
 app.innerHTML = bodyText;
 

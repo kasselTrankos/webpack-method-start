@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "bce71b0b97216f2865c6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6d0f7c2156606a2de2b2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -3581,7 +3581,7 @@
 
 	'use strict';
 	
-	var bodyText = 'Test for ES6, no olvide fdpfrf';
+	var bodyText = 'Test for ES6, no olvide fdpfrdfdd';
 	var app = document.getElementById('app');
 	app.innerHTML = bodyText;
 	

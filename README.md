@@ -20,7 +20,7 @@ En los siguientes ejemplos de ejecución de entorno de desarrollo, cumple que lo
 Por cada ejecución de webpack, lleva un webpack.run, lo que hace es generar un build asociado a la configuración del webpack.config.js.
 
 ### Primera ejecución de Servidor: webpack-dev-server método oficial de Webpack
-Ejecutar el servidor dev [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) desde un script que configura la ejecucion de webpack-dev-server, esta considero la mejor opción. Que permite paremetrizar de una forma mas sencilla.
+Ejecutar el servidor dev [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) desde un script que configura la ejecucion de webpack-dev-server. Que permite paremetrizar de una forma mas sencilla.
 
 Se compila mediante la configuación de webpack.build, y el servidor se configura con webpack.dev.
 
@@ -28,16 +28,18 @@ Se compila mediante la configuación de webpack.build, y el servidor se configur
 ```bash
 npm run dev-server
 ```
-### Segunda ejecución de Servidor: Mediante la webpack webpack-hot-middleware
+### Segunda ejecución de Servidor: webpack-hot-middleware
 
 Este plugin [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) que me encanta, evita el uso de webpack-dev-server, y puedes usar [express](http://expressjs.com/es/) o [koa](http://koajs.com/).
 
-Sobre esta configuración es unitario el archivo de compilación, y de configuración, webpack.hot.
+Sobre esta configuración es unitario el archivo de compilación, y de configuración, webpack.hot. Mi opinión es que es mejor solución, ya que permite más configuración.
 
 ```bash
 npm run hot-server
 ```
+### Tercera ejecución de servidor: Usando browser-sync
 
+Utilizamos [browser-sync](https://www.browsersync.io/), debo buscar si hay modelo para hmr.
 
 Este proyecto sigue las siguientes normas:
 
