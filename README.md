@@ -24,6 +24,8 @@ Ejecutar el servidor dev [webpack-dev-server](http://webpack.github.io/docs/webp
 
 Se compila mediante la configuación de webpack.build, y el servidor se configura con webpack.dev.
 
+Es la opción mas completa y recomendable.
+
 
 ```bash
 npm run dev-server
@@ -32,7 +34,7 @@ npm run dev-server
 
 Este plugin [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) que me encanta, evita el uso de webpack-dev-server, y puedes usar [express](http://expressjs.com/es/) o [koa](http://koajs.com/).
 
-Sobre esta configuración es unitario el archivo de compilación, y de configuración, webpack.hot. Mi opinión es que es mejor solución, ya que permite más configuración.
+
 
 ```bash
 npm run hot-server
