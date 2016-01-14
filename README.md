@@ -8,7 +8,7 @@ npm i
 ```
 
 
-Webpack arrancado desde consola, lo que realiza es una compilación y escritura del js final, ideal para usarlo en producción.
+Webpack arrancado desde consola, lo que realiza es una compilación y escritura del js final.
 La configuración es básica.
 
 ```bash
@@ -24,7 +24,7 @@ Ejecutar el servidor dev [webpack-dev-server](http://webpack.github.io/docs/webp
 
 Se compila mediante la configuación de webpack.build, y el servidor se configura con webpack.dev.
 
-Es la opción mas completa y recomendable.
+
 
 
 ```bash
@@ -32,7 +32,11 @@ npm run dev-server
 ```
 ### Segunda ejecución de Servidor: webpack-hot-middleware
 
-Este plugin [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) que me encanta, evita el uso de webpack-dev-server, y puedes usar [express](http://expressjs.com/es/) o [koa](http://koajs.com/).
+Este plugin [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) que me encanta, evita el uso de webpack-dev-server, y puedes usar tu propio server ya sea [express](http://expressjs.com/es/) o [koa](http://koajs.com/).
+
+Esta opción es la que utiliza [react-transform-hmr](https://github.com/gaearon/react-transform-hmr), el motivo es que te permite acceder al punto de cambio de webpack mediante socket. Y desde aqui realizar la programación front(javasctipt) necesaria para poder hacer el cambio en caliente.
+
+
 
 
 
