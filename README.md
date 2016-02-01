@@ -53,3 +53,5 @@ npm run browser-sync
 Este proyecto sigue las siguientes normas:
 
 - No se instala ningín modulo de forma global.
+
+Muy interesante lectura para migrar desde browserify a Webpack [browserify-users-to-webpack](https://github.com/webpack/docs/wiki/webpack-for-browserify-users)
