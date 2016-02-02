@@ -63,5 +63,5 @@ npm run proxy-server
 - Para migrar desde browserify a Webpack [browserify-users-to-webpack](https://github.com/webpack/docs/wiki/webpack-for-browserify-users)
 
 Este proyecto sigue las siguientes normas:
-
+gi
 - No se instala ningín modulo de forma global.
