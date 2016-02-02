@@ -50,11 +50,6 @@ Utilizamos [browser-sync](https://www.browsersync.io/), debo buscar si hay model
 npm run browser-sync
 ```
 
-Este proyecto sigue las siguientes normas:
-
-- No se instala ningín modulo de forma global.
-
-
 ### Cuarta usando un proxy para webpack-dev-server
 
 Lo que hacemos es correr webpack-dev-server detrás de un [http-proxy](https://github.com/nodejitsu/node-http-proxy).
@@ -66,3 +61,7 @@ npm run proxy-server
 
 #### Interesantes links
 - Para migrar desde browserify a Webpack [browserify-users-to-webpack](https://github.com/webpack/docs/wiki/webpack-for-browserify-users)
+
+Este proyecto sigue las siguientes normas:
+
+- No se instala ningín modulo de forma global.
