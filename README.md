@@ -54,4 +54,15 @@ Este proyecto sigue las siguientes normas:
 
 - No se instala ningín modulo de forma global.
 
-Muy interesante lectura para migrar desde browserify a Webpack [browserify-users-to-webpack](https://github.com/webpack/docs/wiki/webpack-for-browserify-users)
+
+### Cuarta usando un proxy para webpack-dev-server
+
+Lo que hacemos es correr webpack-dev-server detrás de un [http-proxy](https://github.com/nodejitsu/node-http-proxy).
+De esta forma podemos inyectar n proxys, y dejar por detras corriendo la aplición de webpack-dev-server corriendo en otro puerto.
+```bash
+npm run proxy-server
+```
+
+
+#### Interesantes links
+- Para migrar desde browserify a Webpack [browserify-users-to-webpack](https://github.com/webpack/docs/wiki/webpack-for-browserify-users)
