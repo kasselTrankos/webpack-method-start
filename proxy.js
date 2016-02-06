@@ -17,8 +17,8 @@ app.get('/*', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-
-
+//for using hot, and inline from webpack-dev-server
+config.output.publicPath = 'http://' + host + ':' + port;
 //# -----your-webpack-dev-server------------------
 var server = new WebpackDevServer(webpack(config), {
   contentBase: "./public",
@@ -28,7 +28,7 @@ var server = new WebpackDevServer(webpack(config), {
   inline: true,
   noInfo:true,
 	quiet: false,
-  publicPath:  config.output.publicPath,
+  publicPath:  '/',
   stats: { colors: true },
 	headers: { 'Access-Control-Allow-Origin': '*' }
 });

@@ -54,6 +54,14 @@ npm run browser-sync
 
 Lo que hacemos es correr webpack-dev-server detrás de un [http-proxy](https://github.com/nodejitsu/node-http-proxy).
 De esta forma podemos inyectar n proxys, y dejar por detras corriendo la aplición de webpack-dev-server corriendo en otro puerto.
+Debemos tener cuidado con los puerto que usamos para webpack-dev-server y la aplicacion, para poder usar hot, in line de hmr de webpack, en la configuración de webpack usar la url e vez del path:
+```javascript
+output: {
+  path: path.resolve(__dirname,'public'),
+  publicPath: 'http://localhost:3000',
+  filename: 'main.js'
+},
+```
 ```bash
 npm run proxy-server
 ```
@@ -63,5 +71,4 @@ npm run proxy-server
 - Para migrar desde browserify a Webpack [browserify-users-to-webpack](https://github.com/webpack/docs/wiki/webpack-for-browserify-users)
 
 Este proyecto sigue las siguientes normas:
-gi
 - No se instala ningín modulo de forma global.
